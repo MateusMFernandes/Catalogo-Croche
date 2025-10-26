@@ -194,25 +194,37 @@ body{
 
 /* Small screens: reduce text and keep only icon */
 @media (max-width:420px){
-  .whatsapp-float{ padding:10px; width:56px; height:56px; border-radius:50%; gap:0; }
-  .whatsapp-text{ display:none; }
+  .filter-btn {
+        padding: .7rem 1.1rem;
+        font-size: 1rem; 
+    }
+  .hero-title { font-size: 1.8rem; /* Reduzindo de 2.2rem (do 640px) para 1.8rem */}
+  .container { padding: 0 1.5rem;}
 }
 
 /* Responsive grid */
 @media (max-width: 900px){
   .grid-products{ grid-template-columns: repeat(2, 1fr); }
   .product-card img{ height:200px; }
+  .container {padding: 0 1.25rem;}
+  .catalogo {background-color: var(--bg); /* Usa a cor base #FFF8F2 */}
+  .filter-btn {
+        /* Aumentamos o padding de .55rem .9rem (padrão) para .65rem 1rem */
+        padding: .65rem 1rem; font-size: .95rem; /* Mantemos o tamanho padrão da fonte ou ajustamos sutilmente */}
 }
 @media (max-width: 640px){
+  .sobre {background-color: var(--bg); /* Usa a cor base #FFF8F2 */}
+  .filter-btn {
+        /* Aumentamos o padding de .55rem .9rem (padrão) para .7rem 1.1rem */padding: .7rem 1.1rem; font-size: 1rem; /* Opcional: Aumentar levemente a fonte para acompanhar */}
+  .hero-title { font-size: 2.2rem; /* Reduzindo de 2.4rem para 2.2rem */}
+  .container { padding: 0 1.5rem; }
   .header-inner{ padding:.6rem 0; }
   .main-nav{ position: absolute; top:100%; right:8px; background: rgba(255,248,242,0.98); border-radius:8px; box-shadow:var(--shadow); display:none; min-width:200px; padding:.75rem; }
   .main-nav.open{ display:block; }
   .main-nav .nav-links{ flex-direction:column; gap:.5rem; }
   .hamburger{ display:block; }
-
   .grid-products{ grid-template-columns: 1fr; }
   .product-card img{ height:260px; }
-
   .filters{ justify-content:flex-start; overflow:auto; padding-bottom:.5rem; -webkit-overflow-scrolling:touch; }
 }
 
