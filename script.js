@@ -87,14 +87,35 @@ document.addEventListener('DOMContentLoaded', function () {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Product card click => WhatsApp with product name
-  productCards.forEach(card => {
-    card.addEventListener('click', () => {
-      const name = card.getAttribute('data-name') || card.querySelector('.product-name')?.textContent?.trim() || 'produto';
-      const message = encodeURIComponent(`Olá, tenho interesse no ${name}`);
-      const url = `https://wa.me/${WA_NUMBER}?text=${message}`;
-      window.open(url, '_blank');
+  // ===== ABRIR IMAGEM AMPLIADA NO MODAL =====
+const modal = document.getElementById('image-modal');
+const modalImg = document.getElementById('modal-img');
+const modalClose = document.querySelector('.modal-close');
+
+productCards.forEach(card => {
+  const img = card.querySelector('img');
+
+  if (img) {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', (e) => {
+      e.stopPropagation(); // impede abrir WhatsApp
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
     });
+  }
+});
+
+// Fechar modal
+modalClose.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
 
     // also allow Enter key to activate (accessibility)
     card.addEventListener('keydown', (e) => {
@@ -117,4 +138,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // (the HTML contains a href with SEUNUMERO too; replace both)
   }
 
-});
+
