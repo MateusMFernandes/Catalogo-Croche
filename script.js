@@ -1,17 +1,5 @@
-/*
-  script.js
-  - menu hamburger
-  - filtragem por categoria (data-filter / data-category)
-  - smooth scroll para âncoras
-  - ano no footer
-  - clique no card => abre WhatsApp com mensagem automática incluindo o nome do produto
-*/
 
-/* ====== CONFIG ======
-  Substitua SEUNUMERO abaixo pelo seu número no formato internacional sem '+' nem espaços.
-  Exemplo: 5511999998888
-===================== */
-const WA_NUMBER = 'SEUNUMERO'; // <- substituir
+const WA_NUMBER = '5542999114157';
 
 document.addEventListener('DOMContentLoaded', function () {
 
