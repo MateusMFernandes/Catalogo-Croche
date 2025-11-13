@@ -68,7 +68,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:2.25rem 0 1rem;
+  padding:1.25rem 0 1rem;
   color:var(--card);
   overflow:hidden;
   background-color: var(--accent-2); /* cor sólida (sem imagem) */
