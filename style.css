@@ -234,7 +234,7 @@ body{
     }
   .hero-title { font-size: 1.8rem; /* Reduzindo de 2.2rem (do 640px) para 1.8rem */}
   .container { padding: 0 1.5rem;}
-  .logo {padding-left: 1rem;}
+  .logo {padding: 0 1rem;}
 }
 
 /* Responsive grid */
@@ -261,7 +261,7 @@ body{
   .grid-products{ grid-template-columns: 1fr; }
   .product-card img{ height:260px; }
   .filters{ justify-content:flex-start; overflow:auto; padding-bottom:.5rem; -webkit-overflow-scrolling:touch; }
-  .logo {padding-left: 1rem;}
+  .logo {padding: 0 1rem;}
 }
 
 /* Focus styles */
