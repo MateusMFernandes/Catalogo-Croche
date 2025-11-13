@@ -252,7 +252,7 @@ body{
   .filter-btn {
         /* Aumentamos o padding de .55rem .9rem (padrão) para .7rem 1.1rem */padding: .7rem 1.1rem; font-size: 1rem; /* Opcional: Aumentar levemente a fonte para acompanhar */}
   .hero-title { font-size: 2.2rem; /* Reduzindo de 2.4rem para 2.2rem */}
-  .container { padding: 0 2.5rem; }
+  .container { padding: 0 1.5rem; }
   .header-inner{ padding:.6rem 0; }
   .main-nav{ position: absolute; top:100%; right:8px; background: rgba(255,248,242,0.98); border-radius:8px; box-shadow:var(--shadow); display:none; min-width:200px; padding:.75rem; }
   .main-nav.open{ display:block; }
