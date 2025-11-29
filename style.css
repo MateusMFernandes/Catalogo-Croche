@@ -122,8 +122,8 @@ body{
   background:var(--accent);
   color:#fff;
   border-color: rgba(0,0,0,0.03);
-  box-shadow: var(--shadow);
   border-radius:999px;
+  box-shadow: var(--shadow);
 }
 /* Sobre */
 .sobre{ padding:1.25rem 0 2rem; }
